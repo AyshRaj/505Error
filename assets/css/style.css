@@ -1042,22 +1042,23 @@
 .dot:hover {
     background-color: #F075F9;
 }
-
 .pic {
-    height: 597px;
-    width: 597px;
-    left: 699px;
+    height: 556px;
+    width: 370px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin-left: 8rem !important;
+    left:840px;
+    margin-top: 6rem;
 }
 
 .bn {
-    width: 370.81px;
-    height: 566.81px;
-    top: 34.61px;
-    left: 840.19px;
-
-    margin-left: 20rem;
-    margin-top: 5rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
+
 
 
 @media (max-width: 700px) {
@@ -1092,6 +1093,7 @@
 
     .col {
         width: 100%;
+        margin-left: -1rem;
     }
 
     .insideheader {
@@ -1139,7 +1141,7 @@
         width: 120%;
         height: 120%;
         margin: 0;
-        margin-left: -4rem;
+        margin-left: -4rem !important;
         padding: 0;
     }
 
@@ -1152,23 +1154,10 @@
         margin-top: 2rem;
     }
 
-    .pagination {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        justify-content: flex-start;
-        margin: 28rem auto 0;
-        width: fit-content;
-        margin-left: -2rem;
-    }
-
-    .dot {
-        width: 16px;
-        height: 16px;
-    }
+   
 }
 
-@media(min-width:600px) and (max-width:700px) {
+@media (max-width:700px) {
     .pagination {
         display: flex;
         flex-direction: column;
@@ -1177,6 +1166,7 @@
         margin: -2rem auto 0;
         width: fit-content;
         margin-left: -2rem;
+        margin-top: 30rem !important;
     }
 
     .dot {
@@ -1184,14 +1174,14 @@
         height: 16px;
     }
 }
-
-@media(min-width:700px) and (max-width:900px) {
+/* Pagination: 700px to 768px — keep as-is (mobile/tablet view) */
+@media (min-width: 700px) and (max-width: 768px) {
     .pagination {
         display: flex;
         flex-direction: column;
         gap: 16px;
         justify-content: flex-start;
-        margin: -2rem auto 0;
+        margin: 30rem auto 0;
         width: fit-content;
         margin-left: -1rem;
     }
@@ -1202,8 +1192,7 @@
     }
 }
 
-
-@media(min-width:900px) and (max-width:1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .pagination {
         display: flex;
         flex-direction: column;
@@ -1298,6 +1287,7 @@
         flex: 1 1 48%;
         min-width: 280px;
         margin-bottom: 1rem;
+        margin-left: -2rem;
     }
 
     .insideheader {
@@ -1347,6 +1337,7 @@
         height: auto;
         margin: 0;
         padding: 0;
+        margin-left: -4rem !important;
     }
 
     .bn {
